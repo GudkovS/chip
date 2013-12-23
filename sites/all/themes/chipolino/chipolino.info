@@ -1,0 +1,31 @@
+name = chipolino
+description = Theme for Chipolino site.
+version = VERSION
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/base.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/block.css
+stylesheets[all][] = css/menu.css
+
+stylesheets[all][] = css/panels/panels.css
+stylesheets[all][] = css/panels/front-page-panel.css
+stylesheets[all][] = css/panels/subcategory-panel.css
+
+regions[top] = Top
+regions[header] = Header
+regions[menu] = Menu
+
+regions[left_sidebar] = Left sidebar
+regions[content] = Content
+regions[right_sidebar] = Right sidebar
+
+regions[triptych_first] = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last] = Triptych last
+
+regions[partners] = Partners
+regions[footer] = Footer
