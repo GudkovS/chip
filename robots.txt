@@ -17,6 +17,9 @@
 # http://www.sxw.org.uk/computing/robots/check.html
 
 User-agent: *
+# For developing period
+Disallow: /
+
 Crawl-delay: 10
 # Directories
 Disallow: /includes/
