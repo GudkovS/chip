@@ -77,9 +77,7 @@
   <div id="page">
 
       <?php if ($page['top']): ?>
-        <div id="top-region-wrapper" class="clearfix">
           <div id="top-region"><?php print render($page['top']); ?></div>
-        </div>
       <?php endif; ?>
 
       <?php if ($page['header']): ?>

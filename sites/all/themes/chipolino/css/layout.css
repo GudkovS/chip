@@ -21,7 +21,7 @@ body {
 }
 
 #top-region {
-
+    height: 45px;
 }
 
 #header-region-wrapper {
@@ -29,7 +29,7 @@ body {
 }
 
 #header-region {
-
+    height: 255px;
 }
 
 #menu-region-wrapper {
@@ -37,7 +37,7 @@ body {
 }
 
 #menu-region {
-
+    /*height: 60px;*/
 }
 
 #content-region-wrapper {

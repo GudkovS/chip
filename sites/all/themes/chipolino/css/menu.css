@@ -1,0 +1,200 @@
+#menu-region {
+
+}
+
+/* ------------------------ */
+/*    announcement menu     */
+/* ------------------------ */
+#block-menu-menu-announcement-menu {
+    display: block;
+    float: left;
+    height: 60px;
+    width: 220px;
+    background: #8fa9b5;
+    background: linear-gradient(to top, #6e8d9a, #b9cdd6);
+    border-top: 4px solid #fe0000;
+    border-bottom: 4px solid #567986;
+}
+
+#block-menu-menu-announcement-menu div {
+    position: relative;
+    top: 25%;
+}
+
+#block-menu-menu-announcement-menu ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#block-menu-menu-announcement-menu li a {
+    color: #0d4262;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #e5e5ee;
+    filter: dropshadow(color=#e5e5ee,offX=0,offY=1);
+
+}
+/* ------------------------ */
+/*        news menu         */
+/* ------------------------ */
+#block-menu-menu-news-menu {
+    display: block;
+    float: left;
+    height: 60px;
+    width: 220px;
+    background: #8fa9b5;
+    background: linear-gradient(to top, #6e8d9a, #b9cdd6);
+    border-top: 4px solid #e1004f;
+    border-bottom: 4px solid #567986;
+}
+
+#block-menu-menu-news-menu div {
+    position: relative;
+    top: 25%;
+}
+
+#block-menu-menu-news-menu ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#block-menu-menu-news-menu li a {
+    color: #0d4262;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #e5e5ee;
+    filter: dropshadow(color=#e5e5ee,offX=0,offY=1);
+}
+
+
+/* ------------------------- */
+/* subcategory dropdown menu */
+/* ------------------------- */
+#block-superfish-1 {
+    display: block;
+    float: left;
+    height: 60px;
+    width: 460px;
+    background: #bbcfd8;
+}
+
+#block-superfish-1 li.menuparent {
+    /*margin-top: 25px;*/
+    height: 60px;
+    border-bottom: 4px solid #809ba4;
+    text-align: center;
+    background: #bbcfd8;
+}
+
+#block-superfish-1 li.menuparent:nth-child(1) {
+    border-top: 4px solid #7583eb;
+}
+
+#block-superfish-1 li.menuparent:nth-child(2) {
+    border-top: 4px solid #b289ca;
+}
+
+#block-superfish-1 li.menuparent:nth-child(3) {
+    border-top: 4px solid #f6add4;
+}
+
+#block-superfish-1 li.menuparent:nth-child(4) {
+    border-top: 4px solid #2d6805;
+}
+
+#block-superfish-1 li.menuparent:nth-child(5) {
+    border-top: 4px solid #ffd160;
+}
+
+.i18n-en #block-superfish-1 li.menuparent:nth-child(1) {
+   width: 24%;
+}
+
+.i18n-en #block-superfish-1 li.menuparent:nth-child(2) {
+    width: 18%;
+}
+
+.i18n-en #block-superfish-1 li.menuparent:nth-child(3) {
+    width: 18%;
+}
+
+.i18n-en #block-superfish-1 li.menuparent:nth-child(4) {
+    width: 29%;
+}
+
+.i18n-en #block-superfish-1 li.menuparent:nth-child(5) {
+    width: 11%;
+}
+
+
+.i18n-ru #block-superfish-1 li.menuparent:nth-child(1) {
+    width: 28%;
+}
+
+.i18n-ru #block-superfish-1 li.menuparent:nth-child(2) {
+    width: 13%;
+}
+
+.i18n-ru #block-superfish-1 li.menuparent:nth-child(3) {
+    width: 23%;
+}
+
+.i18n-ru #block-superfish-1 li.menuparent:nth-child(4) {
+    width: 21%;
+}
+
+.i18n-ru #block-superfish-1 li.menuparent:nth-child(5) {
+    width: 15%;
+}
+
+
+.i18n-uk #block-superfish-1 li.menuparent:nth-child(1) {
+    width: 18%;
+}
+
+.i18n-uk #block-superfish-1 li.menuparent:nth-child(2) {
+    width: 15%;
+}
+
+.i18n-uk #block-superfish-1 li.menuparent:nth-child(3) {
+    width: 26%;
+}
+
+.i18n-uk #block-superfish-1 li.menuparent:nth-child(4) {
+    width: 23%;
+}
+
+.i18n-uk #block-superfish-1 li.menuparent:nth-child(5) {
+    width: 18%;
+}
+
+
+/*
+.i18n-ru #block-superfish-1 li.menuparent {
+    padding: 0 0.44em;
+}
+
+.i18n-uk #block-superfish-1 li.menuparent {
+    padding: 0 1.13em;
+}
+
+.i18n-en #block-superfish-1 li.menuparent {
+    padding: 0 0.97em;
+}
+*/
+
+#block-superfish-1 li.menuparent a {
+    color: #06547a;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 2px 0 #e5e5ee;
+    filter: dropshadow(color=#e5e5ee,offX=0,offY=1);
+    margin-top: 25px;
+}
+
+.sf-sub-indicator {
+    background: none;
+}
