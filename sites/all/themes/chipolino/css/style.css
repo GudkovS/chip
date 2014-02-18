@@ -1,5 +1,6 @@
 body {
-    background: url(../img/background-top.jpg) no-repeat #d7edfa center top;
+    background: url(../../../../default/files/field/image/background-top.jpg) no-repeat #d7edfa center top;
+	background-size:100% 368px ;
 }
 
 #page {
@@ -8,3 +9,29 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 3px 2px #B0C3CE;
 }
+.language-switcher-locale-url li {
+	display:inline-block;
+}
+.language-switcher-locale-url li a, .language-switcher-locale-url li a:visited{
+	display:block;
+	height:28px;
+	width:39px;
+	text-indent:-99999px;
+} 
+.language-switcher-locale-url li {
+	background:url(../../../../default/files/field/image/language-switcher.jpg) no-repeat ;
+}
+.language-switcher-locale-url .en{
+	background-position:0px 0px;
+}
+.language-switcher-locale-url .ru{
+	background-position:-39px 0px ;
+}
+.language-switcher-locale-url .uk{
+	background-position: -79px 0px;
+}
+
+
+
+
+

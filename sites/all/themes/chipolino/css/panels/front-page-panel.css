@@ -14,11 +14,15 @@
     margin-left: 20px;
     border: 2px solid #6d8c99;
     border-radius: 5px;
-
+	height:117px;
+	width:200px;
+	overflow:hidden;
 }
 
 #front-page-panel .panel-col-first .views-field-title-field {
-
+	background:#6d8c99;
+	font:14px 'open sans';
+	color:#fff;
 }
 
 #front-page-panel .panel-col-first .views-field-field-image {
@@ -26,15 +30,19 @@
     float: left;
 }
 
-#front-page-panel .panel-col-first .views-field-body {
+#front-page-panel .panel-col-first .views-field-body p{
     margin: 10px;
+	font:12px 'open sans';
+	color:#515151;
+	line-height:14px;
 }
 
 /* ------------ */
 /* central pane */
 /* ------------ */
 #front-page-panel .panel-col {
-    width: 460px;
+	overflow:hidden;
+	margin-top:141px;
 }
 
 #front-page-panel .panel-col .inside {
@@ -43,12 +51,16 @@
 
 #front-page-panel .panel-col .views-row {
     margin: 20px;
-    border: 2px solid #6d8c99;
+    border: 2px solid #DB6A5B;
     border-radius: 5px;
+	height:117px;
+	overflow:hidden;
 }
 
 #front-page-panel .panel-col .views-field-title-field {
-
+	background:#DB6A5B;
+	font:14px 'open sans';
+	color:#fff;
 }
 
 #front-page-panel .panel-col .views-field-field-image {
@@ -58,8 +70,26 @@
 
 #front-page-panel .panel-col .views-field-body {
     margin: 10px;
+	margin: 10px;
+	font:12px 'open sans';
+	color:#515151;
+	line-height:14px;
 }
 
+#front-page-panel .panel-col .views-row-2 {
+	border-color:#FFD160;
+}
+
+#front-page-panel .panel-col .views-row-3 {
+	border-color:#B289CA;
+}
+#front-page-panel .panel-col .views-row-2 .views-field-title-field {
+		background:#FFD160;
+}
+
+#front-page-panel .panel-col .views-row-3 .views-field-title-field {
+	background:#B289CA;
+}
 /* ------------ */
 /*  right pane  */
 /* ------------ */
@@ -69,17 +99,22 @@
 
 #front-page-panel .panel-col-last .inside {
     margin: 0;
+	
 }
 
 #front-page-panel .panel-col-last .views-row {
-    margin-top: 20px;
-    margin-right: 20px;
+	margin-top: 20px;
     border: 2px solid #6d8c99;
     border-radius: 5px;
+	height:117px;
+	width:200px;
+	overflow:hidden;
 }
 
 #front-page-panel .panel-col-last .views-field-title-field {
-
+	background:#6d8c99;
+	font:14px 'open sans';
+	color:#fff;
 }
 
 #front-page-panel .panel-col-last .views-field-field-image {
@@ -88,5 +123,9 @@
 }
 
 #front-page-panel .panel-col-last .views-field-body {
-    margin: 10px;
+	margin: 10px;
+	margin: 10px;
+	font:12px 'open sans';
+	color:#515151;
+	line-height:14px;
 }
