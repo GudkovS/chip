@@ -101,6 +101,12 @@
       <?php endif; ?>
 
       <div id="main-region-wrapper" class="clearfix">
+
+          <?php if ($breadcrumb): ?>
+              <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+          <?php endif; ?>
+
+
           <?php if ($page['left_sidebar']): ?>
               <div id="left-sidebar-region-wrapper" class="clearfix">
                   <div id="left-sidebar-region"><?php print render($page['left_sidebar']); ?></div>
