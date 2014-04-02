@@ -42,9 +42,11 @@
 /* ------------ */
 #front-page-panel .panel-col {
 	overflow:hidden;
-	margin-top:141px;
+	
 }
-
+.panel-pane.pane-views-panes.pane-articles-last-articles {
+margin-top:-20px;
+}
 #front-page-panel .panel-col .inside {
     margin: 0;
 }
@@ -55,6 +57,7 @@
     border-radius: 5px;
 	height:117px;
 	overflow:hidden;
+	width: 425px;
 }
 
 #front-page-panel .panel-col .views-field-title-field {
