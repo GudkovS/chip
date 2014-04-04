@@ -1,0 +1,21 @@
+<?php
+
+
+/*
+function chip_field_display_alter(&$display, $context) {
+    dpm($display);
+    dpm($context);
+}
+*/
+
+
+/*
+function chip_field_display_field_collection_item_alter(&$display, $context) {
+    //dpm($display);
+    dpm($context['field']['field_name']);
+    dpm($context);
+}
+*/
+
+
+
