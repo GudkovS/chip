@@ -93,6 +93,30 @@ margin-top:-20px;
 #front-page-panel .panel-col .views-row-3 .views-field-title-field {
 	background:#B289CA;
 }
+
+/* ----------------- */
+/*  slider on front  */
+/* ----------------- */
+#front-page-panel .pane-slider-on-frontpage-panel-pane-1 {
+
+}
+
+#front-page-panel .pane-slider-on-frontpage-panel-pane-1 .view-slider-on-frontpage {
+
+}
+
+#front-page-panel .pane-slider-on-frontpage-panel-pane-1 .view-slider-on-frontpage .views-row {
+	border: none;
+}
+
+#front-page-panel .pane-slider-on-frontpage-panel-pane-1 .view-slider-on-frontpage div.views-row {
+	margin: 20px 0;
+}
+
+#front-page-panel .pane-slider-on-frontpage-panel-pane-1 .view-slider-on-frontpage li.views-row {
+	
+}
+
 /* ------------ */
 /*  right pane  */
 /* ------------ */

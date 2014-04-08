@@ -402,3 +402,10 @@ border: 2px solid #7583eb;
 border-radius: 5px;
 }
 
+/*--------------------------------*/
+/*---------slideshow--------------*/
+/*--------------------------------*/
+
+#views_slideshow_cycle_main_slider_on_frontpage-panel_pane_1.views-slideshow-cycle-main-frame-row-item.views-row.views-row-0.views-row-odd.iews-row-first{
+border:none;
+}
