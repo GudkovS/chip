@@ -15,10 +15,8 @@ stylesheets[all][] = css/panels/panels.css
 stylesheets[all][] = css/panels/front-page-panel.css
 stylesheets[all][] = css/panels/subcategory-panel.css
 
-regions[header_first] = Header first
-regions[header_middle] = Header middle
-regions[header_last] = Header last
-
+regions[top] = Top
+regions[header] = Header
 regions[menu] = Menu
 
 regions[left_sidebar] = Left sidebar
