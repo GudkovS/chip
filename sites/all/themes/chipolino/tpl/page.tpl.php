@@ -76,23 +76,22 @@
 <div id="page-wrapper">
   <div id="page">
 
-      <?php if ($page['top']): ?>
-          <div id="top-region"><?php print render($page['top']); ?></div>
-      <?php endif; ?>
-
-      <?php if ($page['header']): ?>
-
         <div id="header-region-wrapper" class="clearfix">
-          <div id="header-region">
-              <?php if ($logo): ?>
-                  <div class="logo">
-                      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-                  </div>
-                  <?php print render($page['header']); ?>
-              <?php endif; ?>
-          </div>
+            <div id="header-first-region">
+                <?php print render($page['header_first']); ?>
+                <?php if ($logo): ?>
+                    <div class="logo">
+                        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+                    </div>
+                <?php endif; ?>
+            </div>
+            <div id="header-middle-region">
+                <?php print render($page['header_middle']); ?>
+            </div>
+            <div id="header-last-region">
+                <?php print render($page['header_last']); ?>
+            </div>
         </div>
-      <?php endif; ?>
 
       <?php if ($page['menu']): ?>
         <div id="menu-region-wrapper" class="clearfix">
