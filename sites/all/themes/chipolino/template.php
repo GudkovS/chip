@@ -1,5 +1,14 @@
 <?php
 
+function chipolino_form_alter( &$form, &$form_state, $form_id )
+{
+    // add placeholder on search block form
+    if (in_array( $form_id, array( 'search_block_form'))) {
+        $form['search_block_form']['#attributes']['placeholder'] = t('Search on the site');
+    }
+}
+
+
 /**
  * Implements template_preprocess_field().
  */
