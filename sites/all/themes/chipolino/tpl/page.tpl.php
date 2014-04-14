@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Default theme implementation to display a single Drupal page.
@@ -74,97 +73,120 @@
 ?>
 
 <div id="page-wrapper">
-  <div id="page">
+    <div id="page">
 
-      <?php if ($page['top']): ?>
-          <div id="top-region"><?php print render($page['top']); ?></div>
-      <?php endif; ?>
+        <?php if ($page['top']): ?>
+            <div id="top-region"><?php print render($page['top']); ?></div>
+        <?php endif; ?>
 
-      <?php if ($page['header']): ?>
+        <?php if ($page['header']): ?>
 
-        <div id="header-region-wrapper" class="clearfix">
-          <div id="header-region">
-              <?php if ($logo): ?>
-                  <div class="logo">
-                      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-                  </div>
-                  <?php print render($page['header']); ?>
-              <?php endif; ?>
-          </div>
-        </div>
-      <?php endif; ?>
-
-      <?php if ($page['menu']): ?>
-        <div id="menu-region-wrapper" class="clearfix">
-          <div id="menu-region"><?php print render($page['menu']); ?></div>
-        </div>
-      <?php endif; ?>
-
-      <div id="main-region-wrapper" class="clearfix">
-
-          <?php if ($breadcrumb): ?>
-              <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-          <?php endif; ?>
-
-
-          <?php if ($page['left_sidebar']): ?>
-              <div id="left-sidebar-region-wrapper" class="clearfix">
-                  <div id="left-sidebar-region"><?php print render($page['left_sidebar']); ?></div>
-              </div>
-          <?php endif; ?>
-
-          <?php if ($page['content']): ?>
-            <div id="content-region-wrapper" class="clearfix">
-              <div id="content-region">
-
-                <?php if ($messages): ?>
-                  <div id="messages">
-                    <?php print $messages; ?>
-                  </div>
-                <?php endif; ?>
-
-                <?php print render($page['content']); ?>
-              </div>
+            <div id="header-region-wrapper" class="clearfix">
+                <div id="header-region">
+                    <?php if ($logo): ?>
+                        <div class="logo">
+                            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+                        </div>
+                        <?php print render($page['header']); ?>
+                    <?php endif; ?>
+                </div>
             </div>
-          <?php endif; ?>
+        <?php endif; ?>
 
-          <?php if ($page['right_sidebar']): ?>
-              <div id="right-sidebar-region-wrapper" class="clearfix">
-                  <div id="right-sidebar-region"><?php print render($page['right_sidebar']); ?></div>
-              </div>
-          <?php endif; ?>
-      </div>
+        <?php if ($page['menu']): ?>
+            <div id="menu-region-wrapper" class="clearfix">
+                <div id="menu-region"><?php print render($page['menu']); ?></div>
+            </div>
+            <script>
+                jQuery(document).ready(function() {
+                    jQuery('#block-superfish-1 li.menuparent').hover(function() {
+                        var $start_bg = jQuery(this).css('background');
+                        var $hover_bg = jQuery(this).css('border-top-color');
+                        jQuery(this).css({
+                            backgroundColor: $hover_bg,
+                            borderBottomColor: $hover_bg
+                        });
+//                        jQuery(this).children('ul').stop().slideDown(200);
+                        jQuery(this).children('ul').css({
+                            backgroundColor: $hover_bg
+                        });
+                    }, function() {
+                        jQuery(this).css({
+                            backgroundColor: '#BBCFD8',
+                            borderBottomColor: '#809ba4'
+                        });
+//                        jQuery(this).children('ul').fadeOut(100);
+                    });
+                });
 
-      <div id="triptych-region-wrapper" class="clearfix">
-          <?php if ($page['triptych_first']): ?>
-              <div id="triptych-first-region-wrapper" class="clearfix">
-                  <div id="triptych-first-region"><?php print render($page['triptych_first']); ?></div>
-              </div>
-          <?php endif; ?>
+            </script>
+        <?php endif; ?>
 
-          <?php if ($page['triptych_middle']): ?>
-              <div id="triptych-middle-region-wrapper" class="clearfix">
-                  <div id="triptych-middle-region"><?php print render($page['triptych_middle']); ?></div>
-              </div>
-          <?php endif; ?>
+        <div id="main-region-wrapper" class="clearfix">
 
-          <?php if ($page['triptych_last']): ?>
-              <div id="triptych-last-region-wrapper" class="clearfix">
-                  <div id="triptych-last-region"><?php print render($page['triptych_last']); ?></div>
-              </div>
-          <?php endif; ?>
-      </div>
+            <?php if ($breadcrumb): ?>
+                <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+            <?php endif; ?>
 
-      <?php if ($page['partners']): ?>
-          <div id="partners-region-wrapper">
-              <div id="partners-region"><?php print render($page['partners']); ?></div>
-          </div>
-      <?php endif; ?>
 
-      <?php if ($page['footer']): ?>
-        <div id="footer-region-wrapper">
-          <div id="footer-region"><?php print render($page['footer']); ?></div>
+            <?php if ($page['left_sidebar']): ?>
+                <div id="left-sidebar-region-wrapper" class="clearfix">
+                    <div id="left-sidebar-region"><?php print render($page['left_sidebar']); ?></div>
+                </div>
+            <?php endif; ?>
+
+            <?php if ($page['content']): ?>
+                <div id="content-region-wrapper" class="clearfix">
+                    <div id="content-region">
+
+                        <?php if ($messages): ?>
+                            <div id="messages">
+                                <?php print $messages; ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php print render($page['content']); ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+
+            <?php if ($page['right_sidebar']): ?>
+                <div id="right-sidebar-region-wrapper" class="clearfix">
+                    <div id="right-sidebar-region"><?php print render($page['right_sidebar']); ?></div>
+                </div>
+            <?php endif; ?>
         </div>
-      <?php endif; ?>
-  </div>
+
+        <div id="triptych-region-wrapper" class="clearfix">
+            <?php if ($page['triptych_first']): ?>
+                <div id="triptych-first-region-wrapper" class="clearfix">
+                    <div id="triptych-first-region"><?php print render($page['triptych_first']); ?></div>
+                </div>
+            <?php endif; ?>
+
+            <?php if ($page['triptych_middle']): ?>
+                <div id="triptych-middle-region-wrapper" class="clearfix">
+                    <div id="triptych-middle-region"><?php print render($page['triptych_middle']); ?></div>
+                </div>
+            <?php endif; ?>
+
+            <?php if ($page['triptych_last']): ?>
+                <div id="triptych-last-region-wrapper" class="clearfix">
+                    <div id="triptych-last-region"><?php print render($page['triptych_last']); ?></div>
+                </div>
+            <?php endif; ?>
+        </div>
+
+        <?php if ($page['partners']): ?>
+            <div id="partners-region-wrapper">
+                <div id="partners-region"><?php print render($page['partners']); ?></div>
+            </div>
+        <?php endif; ?>
+
+        <?php if ($page['footer']): ?>
+            <div id="footer-region-wrapper">
+                <div id="footer-region"><?php print render($page['footer']); ?></div>
+            </div>
+        <?php endif; ?>
+    </div>
 </div>

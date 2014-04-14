@@ -8,10 +8,9 @@
 #block-menu-menu-announcement-menu {
     display: block;
     float: left;
-    height: 60px;
+    height: 58px;
     width: 220px;
-    background: #8fa9b5;
-    background: linear-gradient(to top, #6e8d9a, #b9cdd6);
+    background: #8fa9b5 url(../img/menu-gradient.png) repeat-x left top;
     border-top: 4px solid #fe0000;
     border-bottom: 4px solid #567986;
 }
@@ -29,11 +28,10 @@
 #block-menu-menu-announcement-menu li a {
     color: #0d4262;
     font-size: 26px;
-    font-weight: bold;
-    text-decoration: none;
+    font-weight: 700;
+    /*text-decoration: underline;*/
     text-shadow: 0 1px 0 #e5e5ee;
-    filter: dropshadow(color=#e5e5ee,offX=0,offY=1);
-
+    /*filter: dropshadow(color=#e5e5ee,offX=0,offY=1);*/
 }
 /* ------------------------ */
 /*        news menu         */
@@ -41,10 +39,9 @@
 #block-menu-menu-news-menu {
     display: block;
     float: left;
-    height: 60px;
+    height: 58px;
     width: 220px;
-    background: #8fa9b5;
-    background: linear-gradient(to top, #6e8d9a, #b9cdd6);
+    background: #8fa9b5 url(../img/menu-gradient.png) repeat-x left top;
     border-top: 4px solid #e1004f;
     border-bottom: 4px solid #567986;
 }
@@ -75,41 +72,46 @@
 #block-superfish-1 {
     display: block;
     float: left;
-    height: 68px;
+    height: 66px;
     width: 460px;
     background: #bbcfd8;
 }
 
 #block-superfish-1 li.menuparent {
-    /*margin-top: 25px;*/
-    height: 60px;
+    display: table-cell;
+    height: 58px;
     border-bottom: 4px solid #809ba4;
     text-align: center;
     background: #bbcfd8;
+    float: none;
+    position: relative;
 }
 
-#block-superfish-1 li.menuparent:nth-child(1) {
+#block-superfish-1 li.menuparent {
     border-top: 4px solid #7583eb;
 }
 
-#block-superfish-1 li.menuparent:nth-child(2) {
+#block-superfish-1 li.menuparent + li {
     border-top: 4px solid #b289ca;
 }
 
-#block-superfish-1 li.menuparent:nth-child(3) {
+#block-superfish-1 li.menuparent + li + li {
     border-top: 4px solid #f6add4;
 }
 
-#block-superfish-1 li.menuparent:nth-child(4) {
+#block-superfish-1 li.menuparent + li + li + li {
     border-top: 4px solid #2d6805;
 }
 
-#block-superfish-1 li.menuparent:nth-child(5) {
+#block-superfish-1 li.menuparent + li + li + li + li {
     border-top: 4px solid #ffd160;
 }
-
-.i18n-en #block-superfish-1 li.menuparent:nth-child(1) {
-   width: 24%;
+#superfish-1 {
+    height: 66px;
+    display: table-row;
+}
+/*.i18n-en #block-superfish-1 li.menuparent:nth-child(1) {
+    width: 24%;
 }
 
 .i18n-en #block-superfish-1 li.menuparent:nth-child(2) {
@@ -168,7 +170,7 @@
 
 .i18n-uk #block-superfish-1 li.menuparent:nth-child(5) {
     width: 18%;
-}
+}*/
 
 
 /*
@@ -185,16 +187,60 @@
 }
 */
 
-#block-superfish-1 li.menuparent a {
+#block-superfish-1 li.menuparent > a {
     color: #06547a;
     font-size: 16px;
+    display: table-cell;
+    width: 1000px;
+    text-align: center;
     font-weight: bold;
     text-decoration: none;
     text-shadow: 0 2px 0 #e5e5ee;
     filter: dropshadow(color=#e5e5ee,offX=0,offY=1);
-    margin-top: 25px;
+    padding: 23px 0 19px;
 }
-
+#block-superfish-1 li.menuparent ul li:first-child {    
+    background: none;
+}
+#block-superfish-1 li.menuparent ul li:hover a {
+    background: url(../img/hover-bg.png) left top;
+}
+#block-superfish-1 li.menuparent ul li a {
+    white-space: nowrap;
+    display: block;
+    padding: 13px 25px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+#block-superfish-1 li.menuparent ul li {
+    background: url(../img/separator.png) no-repeat center top;
+}
+#block-superfish-1 li.menuparent:hover > a {
+    text-shadow: none;
+    color: #fff;
+}
+#block-superfish-1 li.menuparent:hover {
+    background: #326C86;
+    border-bottom: 4px solid #BBCFD8;
+}
+#block-superfish-1 li.menuparent ul li {
+    margin: 0;
+}
 .sf-sub-indicator {
     background: none;
+}
+#block-superfish-1 li.menuparent:hover ul {
+    display: block;
+    text-align: left;
+    background: #326C86;
+    border-radius: 0 0 10px 10px;
+}
+#block-superfish-1 li.menuparent ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9999;
 }
