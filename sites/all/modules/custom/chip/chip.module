@@ -17,5 +17,16 @@ function chip_field_display_field_collection_item_alter(&$display, $context) {
 }
 */
 
+/*
+function chip_block_view_alter(&$data, $block) {
+    dpm($data);
+    dpm($block);
+}
+*/
+
+function chip_user_presave(&$edit, $account, $category) {
+    $edit['name'] = $edit['mail'];
+}
+
 
 
