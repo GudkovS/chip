@@ -11,7 +11,7 @@ function chipolino_form_alter( &$form, &$form_state, $form_id )
 
 /* set breadcrumb separator and element wrapper */
 function chipolino_breadcrumb($variables) {
-    $sep = '<span class="br-sep">'.' &gt; '.'</span>';
+    $sep = '<span class="br-sep">'.'&gt; '.'</span>';
     if (count($variables['breadcrumb']) > 0) {
         foreach ($variables['breadcrumb'] as $key => $value) {
             $variables['breadcrumb'][$key] = '<span class="br-wrap">'.$value.'</span>';
